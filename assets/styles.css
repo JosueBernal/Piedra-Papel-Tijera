@@ -5,7 +5,7 @@
   font-family: transformers;
   src :url("fonts/transfrm.ttf");
 }
-body {
+.pag1 {
   background-image:url("img/transformers.jpg");
   background-position: center;
   background-size: cover;
@@ -125,7 +125,7 @@ width: 100%;
 
 
 /* PAGINA PVP */
-.ppvp {
+.ppvp1 {
   background-image:url("img/fondopvp.jpg");
   background-size: cover;
   font-family: transformers;
@@ -144,12 +144,28 @@ width: 100%;
 .barInicio2 a{
   color: white;
 }
+
+.button1{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.button1 h2{
+  font-size: 40px;
+}
+
 .autobots {
   color: white;
 }
 
 .autobots h2{
   color: white;
+}
+
+.jugador1{
+  display: flex;
+  flex-direction: column;
 }
 
 input {
@@ -191,6 +207,11 @@ label:hover {
   color: white;
 }
 
+.jugador2{
+  display: flex;
+  flex-direction: column;
+}
+
 input {
   display: none;
 }
@@ -220,4 +241,122 @@ label:hover {
 
 .baricade {
   background-image:url("img/baricade.png");
+}
+
+
+
+
+
+
+
+/* seccion 2 del juego pvp */
+.section2{
+  background-image:url("img/seccion2.jpg");
+  background-size: cover;
+  font-family: transformers;
+  width: 100%;
+  height: 100vh;
+}
+.resuljvj{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+
+}
+
+.results__img {
+  width: 600px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* computadora vs jugador */
+
+.computer {
+  background-image:url("img/computer.jpg");
+  background-size: cover;
+  font-family: transformers;
+  width: 100%;
+  height: 100vh;
+}
+
+.buttonc{
+  display: flex;
+  justify-content: center;
+}
+
+.buttonc h2{
+  font-size: 40px;
+}
+
+.autobotsc {
+  color: white;
+  font-size: 40px;
+}
+
+.autobotsc h1{
+  display: flex;
+  justify-content:center;
+}
+
+.autobotsc h2{
+  color: white;
+}
+
+.jugador{
+  display: flex;
+  justify-content: center;
+}
+
+.optimusc {
+  background-image:url("img/optimusc.jpg");
+}
+
+.bumblebeec {
+  background-image:url("img/bumblec.jpeg");
+}
+
+.hound {
+  background-image:url("img/houndc.jpg");
+}
+
+.finc{
+bottom: 0;
+height: 100px;
+position: absolute;
+width: 100%;
+}
+.finc p{
+ display: flex;
+ align-items:flex-end;
+ justify-content: space-around;
+ text-align: center;
+ color: white;
+ font-size: 20px;
+}
+
+/* seccion 2 del juego cvp */
+/* resultados jvC */
+.computer2{
+  background-image:url("img/computer2.jpg");
+  background-size: cover;
+  font-family: transformers;
+  width: 100%;
+  height: 100vh;
+}
+.resultados{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+
+}
+
+.results__img {
+  width: 600px;
+}
+
+.hidden {
+  display: none;
 }

@@ -5,54 +5,98 @@
     <link rel="stylesheet" href="../assets/styles.css">
     <title></title>
   </head>
+
   <body class="ppvp">
-    <header class="barInicio2">
-      <div >
-        <a class="inicio" href="../index.html">Inicio</a>
-        <img src="../assets/img/imagencentro.png" alt="imagen centro">
-        <a class="instrucciones" href="#">Instrucciones</a>
-      </div>
-    </header>
+    <section class="ppvp1">
+      <header class="barInicio2">
+        <div >
+          <a class="inicio" href="../index.html">Inicio</a>
+          <img src="../assets/img/imagencentro.png" alt="imagen centro">
+          <a class="instrucciones" href="#">Instrucciones</a>
+        </div>
+      </header>
+    <section class="button1">
+      <section class="autobots">
+        <h1>Autobots</h1>
+          <form class="jugador1">
+            <label for="optimus" class="optimus">
+              <h2>Optimus</h2>
+            </label>
+            <label for="bumblebee" class="bumblebee">
+              <h2>Bumblebee</h2>
+            </label>
+            <label for="ironhead" class="ironhead">
+              <h2>Ironhide</h2>
+            </label>
 
-    <section class="autobots">
-      <h1>Autobots</h1>
-        <form class="jugador1">
-          <label for="optimus" class="optimus">
-            <h2>Optimus</h2>
-          </label>
-          <label for="bumblebee" class="bumblebee">
-            <h2>Bumblebee</h2>
-          </label>
-          <label for="ironhead" class="ironhead">
-            <h2>Ironhide</h2>
-          </label>
+            <input id="optimus" name="autobot" type="radio" value="optimus">
+            <input id="bumblebee" name="autobot" type="radio" value="bumblebee">
+            <input id="ironhead" name="autobot" type="radio" value="ironhead">
+          </form>
+      </section>
 
-          <input id="optimus" name="autobot" type="radio" value="optimus">
-          <input id="bumblebee" name="autobot" type="radio" value="bumblebee">
-          <input id="ironhead" name="autobot" type="radio" value="ironhead">
-        </form>
-    </section>
+      <section class="decepticons">
+        <h1>Decepticons</h1>
+          <form class="jugador2">
+            <label for="megatron" class="megatron">
+              <h2>Megatron</h2>
+            </label>
+            <label for="starscream" class="starscream">
+              <h2>Starscream</h2>
+            </label>
+            <label for="barricade" class="baricade">
+              <h2>Barricade</h2>
+            </label>
 
-    <section class="decepticons">
-      <h1>Decepticons</h1>
-        <form class="jugador2">
-          <label for="megatron" class="megatron">
-            <h2>Megatron</h2>
-          </label>
-          <label for="starscream" class="starscream">
-            <h2>Starscream</h2>
-          </label>
-          <label for="baricade" class="baricade">
-            <h2>Barricade</h2>
-          </label>
-
-          <input id="megatron" name="autobot" type="radio" value="megatron">
-          <input id="starscream" name="autobot" type="radio" value="starscream">
-          <input id="baricade" name="autobot" type="radio" value="baricade">
-        </form>
-    </section>
+            <input id="megatron" name="decepticon" type="radio" value="megatron">
+            <input id="starscream" name="decepticon" type="radio" value="starscream">
+            <input id="barricade" name="decepticon" type="radio" value="barricade">
+          </form>
+      </section>
+      </section>
     <footer class="fin">
       <p>Es tiempo de ser un heroe, el futuro de la humanidad esta en tus manos</p>
     </footer>
+    </section>
+
+    <section class="section2 hidden">
+      <header class="barInicio2">
+        <div >
+          <a class="inicio" href="../index.html">Inicio</a>
+          <img src="../assets/img/imagencentro.png" alt="imagen centro">
+          <a class="instrucciones" href="#">Instrucciones</a>
+        </div>
+      </header>
+<!-- autobots -->
+      <article class="resuljvj">
+        <img class="results__img optimus-win hidden" src="../assets/img/optimusWiner.gif" alt="">
+        <img class="results__img bumblebee-win hidden" src="../assets/img/bumbleWin.gif" alt="">
+        <img class="results__img ironhide-win hidden" src="../assets/img/ironwin.gif" alt="">
+
+        <img class="results__img optimus-dead hidden" src="../assets/img/optimusdead.gif" alt="">
+        <img class="results__img bumblebee-dead hidden" src="../assets/img/bumbleDead.gif" alt="">
+        <img class="results__img ironhide-dead hidden" src="../assets/img/irondead.gif" alt="">
+
+        <img class="results__img optimus-tied hidden" src="../assets/img/optimustie.gif" alt="">
+        <img class="results__img bumblebee-tied hidden" src="../assets/img/bumbletie.gif" alt="">
+        <img class="results__img ironhide-tied hidden" src="../assets/img/houndtie.gif" alt="">
+
+<!-- Decepticons -->
+
+        <img class="results__img megatron-win hidden" src="../assets/img/megatronwin.gif" alt="">
+        <img class="results__img starscream-win hidden" src="../assets/img/starscreamwin.gif" alt="">
+        <img class="results__img Barricade-win hidden" src="../assets/img/barriwin.gif" alt="">
+
+        <img class="results__img megatron-dead hidden" src="../assets/img/megatrondead.gif" alt="">
+        <img class="results__img starscream-dead hidden" src="../assets/img/strasdead.gif" alt="">
+        <img class="results__img Barricade-dead hidden" src="../assets/img/barridead.gif" alt="">
+
+        <img class="results__img megatron-tied hidden" src="../assets/img/optimustie.gif" alt="">
+        <img class="results__img starscream-tied hidden" src="../assets/img/bumbletie.gif" alt="">
+        <img class="results__img Barricade-tied hidden" src="../assets/img/houndtie.gif" alt="">
+
+      </article>
+    </section>
+    <script src="../assets/scripts.js"></script>
   </body>
 </html>
