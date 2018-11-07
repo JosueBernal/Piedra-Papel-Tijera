@@ -22,19 +22,8 @@ const ironheadtied = document.querySelector('.ironhide-tied');
 const megatron = document.querySelector('.megatron');
 const starscream = document.querySelector('.starscream');
 const barricade = document.querySelector('.barricade');
-//
-// const megatronWin = document.querySelector('.megatron-win');
-// const starscreamWin = document.querySelector('.starscream-win');
-// const barricadeWin = document.querySelector('.barricade-win');
-//
-// const megatrondead = document.querySelector('.megatron-dead');
-// const starscreamdead = document.querySelector('.starscream-dead');
-// const barricadead = document.querySelector('.barricade-dead');
-//
-// const megatrontied = document.querySelector('.megatron-tied');
-// const starscreamtied = document.querySelector('.starscream-tied');
-// const barricadetied = document.querySelector('.barricade-tied');
 
+const resultTexto = document.querySelector('.resultTexto');
 for(let i = 0; i < inputsAutobots.length; i++) {
   inputsAutobots[i].addEventListener('click', chooseAutobot);
 }
@@ -62,22 +51,31 @@ function chooseDecepticon(event) {
 function versus(autobot, decepticon) {
   if (autobot == "optimus" && decepticon == "barricade") {
     optimusdead.classList.remove('hidden');
+    resultTexto.innerHTML = "¡Decepticons esta batalla la han ganado! Han derrotado a los Autobots pero no se rendiranlos Autobots";
    } else if (autobot == "optimus" && decepticon == "starscream") {
      optimuswin.classList.remove('hidden');
+     resultTexto.innerHTML = "¡El mal ha caido Autobots! Los Decepticons han sido derrotados pero estemos alertas, el mal nunca duerme";
    } else if (autobot == "optimus" && decepticon == "megatron") {
      optimustied.classList.remove('hidden');
+     resultTexto.innerHTML = "¡Esto esta parejo! Llamen refuerzos e intentemos esta lucha de nuevo";
    } else if (autobot == "ironhead" && decepticon == "starscream") {
      ironheadead.classList.remove('hidden');
+     resultTexto.innerHTML = "!Decepticons esta batalla la han ganado! Han derrotado a los Autobots pero no se rendiranlos Autobots";
    } else if (autobot == "ironhead" && decepticon == "megatron"){
      ironheadwin.classList.remove('hidden');
+     resultTexto.innerHTML = "¡El mal ha caido Autobots! Los Decepticons han sido derrotados pero estemos alertas, el mal nunca duerme";
    } else if (autobot == "ironhead" && decepticon == "barricade") {
      ironheadtied.classList.remove('hidden');
+     resultTexto.innerHTML = "¡Esto esta parejo! Llamen refuerzos e intentemos esta lucha de nuevo";
    } else if (autobot == "bumblebee" && decepticon == "megatron") {
      bumblebeedead.classList.remove('hidden');
+     resultTexto.innerHTML = "!Decepticons esta batalla la han ganado! Han derrotado a los Autobots pero no se rendiranlos Autobots";
    } else if (autobot == "bumblebee" && decepticon == "barricade") {
      bumblebeewin.classList.remove('hidden');
+     resultTexto.innerHTML = "¡El mal ha caido Autobots! Los Decepticons han sido derrotados pero estemos alertas, el mal nunca duerme";
    } else if (autobot == "bumblebee" && decepticon == "starscream") {
      bumblebeetied.classList.remove('hidden');
+     resultTexto.innerHTML = "¡Esto esta parejo! Llamen refuerzos e intentemos esta lucha de nuevo";
    }
 }
 
@@ -102,6 +100,9 @@ const hounddead = document.querySelector('.hound-dead');
 const optimusctied = document.querySelector('.optimus-tied');
 const bumbletied = document.querySelector('.bumble-tied');
 const houndtied = document.querySelector('.hound-tied');
+
+const relTexto = document.querySelector('.relTexto');
+
 
 for(let i = 0; i < player.length; i++) {
   player[i].addEventListener('click', chooseAutobotc);
@@ -130,35 +131,33 @@ function computerChoose(autobotc) {
 }
 
 function match(autobotc, computer) {
-  console.log(autobotc, computer);
+  // console.log(autobotc, computer);
 if (autobotc == "optimusc" && computer == "hound") {
     optimuscdead.classList.remove('hidden');
-    // console.log("Jugador " + Jugador +" vs Tiro Compu" + tiro_compu +" gana la compu.");
+    relTexto.innerHTML = "Quintessa te ha capturado. La destrucción de la tierra comienza";
   } else if (autobotc == "optimusc" && computer == "bumblec") {
     optimuscWin.classList.remove('hidden');
-    // console.log("Jugador " + Jugador +" vs Tiro Comppu" + tiro_compu + ", gana el Jugador");
+    relTexto.innerHTML = "EL PLANETA TIERRA ESTA A SALVO, ¡AUTOBOTS! SIEMPRE ESTAREMOS UNIDOS PARA DERROTAR A CUALQUIERA QUE QUIERA HACERLE DAÑO A LA HUMANIDAD";
   } else if (autobotc == "optimusc" && computer == "optimusc") {
-    optimusctied.classList.remove('hidden')
-    // console.log("Jugador " +Jugador +" vs Tiro Compu" + tiro_compu + ", empate, intenta de nuevo");
-
+    optimusctied.classList.remove('hidden');
+    relTexto.innerHTML = "PARECE QUE NUESTRAS FUERZAS ESTÁN POR IGUAL, ES MOMENTO DE HACER UNA NUEVA ESTRATEGIA";
   } else if (autobotc == "hound" && computer == "bumblec") {
     hounddead.classList.remove('hidden');
-    // console.log("Jugador " + Jugador +" vs Tiro Compu" + tiro_compu + ", gana el compu.");
+    relTexto.innerHTML = "¡Quintessa te ha capturado. La destrucción de la tierra comienza";
   } else if (autobotc == "hound" && computer == "optimusc"){
     houndWin.classList.remove('hidden');
-    // console.log("Jugador " + Jugador +" vs Tiro Compu" + tiro_compu + ", gana el Jugador");
+    relTexto.innerHTML = "EL PLANETA TIERRA ESTA A SALVO, ¡AUTOBOTS! SIEMPRE ESTAREMOS UNIDOS PARA DERROTAR A CUALQUIERA QUE QUIERA HACERLE DAÑO A LA HUMANIDAD";
   }else if (autobotc == "hound" && computer == "hound") {
-    houndtied.classList.remove('hidden')
-    // console.log("Jugador " + Jugador +" vs Tiro Compu" + tiro_compu + ", empate, intenta de nuevo");
-
+    houndtied.classList.remove('hidden');
+    relTexto.innerHTML = "PARECE QUE NUESTRAS FUERZAS ESTÁN POR IGUAL, ES MOMENTO DE HACER UNA NUEVA ESTRATEGIA";
   } else if (autobotc == "bumblebeec" && computer == "optimusc") {
     bumbledead.classList.remove('hidden');
-    // console.log("Jugador " + Jugador +" vs Tiro Compu" + tiro_compu + ", gana el compu.");
+    relTexto.innerHTML = "¡Quintessa te ha capturado. La destrucción de la tierra comienza";
   } else if (autobotc == "bumblebeec" && computer == "hound") {
     bumbleWin.classList.remove('hidden');
-    // console.log("Jugador " + Jugador +" vs Tiro Compu" + tiro_compu + ", gana el Jugador");
+    relTexto.innerHTML = "EL PLANETA TIERRA ESTA A SALVO, ¡AUTOBOTS! SIEMPRE ESTAREMOS UNIDOS PARA DERROTAR A CUALQUIERA QUE QUIERA HACERLE DAÑO A LA HUMANIDAD";
   }else if (autobotc == "bumblebeec" && computer == "bumblec") {
-    bumbletied.classList.remove('hidden')
-    // console.log("Jugador " + Jugador +" vs Tiro Compu" + tiro_compu + ", empate, intenta de nuevo");
+    bumbletied.classList.remove('hidden');
+    relTexto.innerHTML = "PARECE QUE NUESTRAS FUERZAS ESTÁN POR IGUAL, ES MOMENTO DE HACER UNA NUEVA ESTRATEGIA";
   }
 }

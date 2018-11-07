@@ -64,14 +64,14 @@ h2 {
  font-size: 20px;
  margin-left: 10px;
  float: left;
- color: #39393A;
+ color: white;
 }
 .instrucciones{
  text-decoration: none;
  font-size: 20px;
  margin-right: 10px;
  float: right;
- color: #39393A;
+ color: white;
 }
 .inicio:hover{
  color: red;
@@ -97,6 +97,11 @@ justify-content:space-around;
  color: white;
 }
 
+.pvp:hover{
+ color: red;
+ border-color: #4c4b4b;
+}
+
 .pvc{
  display: flex;
  background-image: url("img/pvc.png");
@@ -108,6 +113,12 @@ justify-content:space-around;
  float: right;
  color: white;
 }
+
+.pvc:hover{
+ color: red;
+ border-color: #4c4b4b;
+}
+
 .fin{
 bottom: 0;
 height: 100px;
@@ -119,7 +130,7 @@ width: 100%;
  align-items:flex-end;
  justify-content: space-around;
  text-align: center;
- color: #39393A;
+ color: white;
  font-size: 30px;
 }
 
@@ -259,9 +270,16 @@ label:hover {
 }
 .resuljvj{
   display: flex;
+  flex-direction: column;
   align-items:center;
   justify-content:center;
 
+}
+
+.resultTexto {
+  font-size: 30px;
+  color: white;
+  text-align: center;
 }
 
 .results__img {
@@ -348,9 +366,16 @@ width: 100%;
 }
 .resultados{
   display: flex;
+  flex-direction: column;
   align-items:center;
   justify-content:center;
 
+}
+
+.relTexto {
+  font-size: 30px;
+  color: white;
+  text-align: center;
 }
 
 .results__img {
